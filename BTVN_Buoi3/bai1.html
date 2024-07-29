@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        .Icon1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 14px;
+            background-color: #f8f8f8;
+        }
+
+        .Icon1_1 i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .Nuoc {
+            display: flex;
+            gap: 20px;
+            color: #aaa;
+        }
+
+        .Main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+        }
+
+        .Logo h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .search {
+            position: relative;
+            width: 400px;
+        }
+
+        .search input {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding-left: 40px;
+        }
+
+        .search i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #aaa;
+        }
+
+        .Icon2 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .Icon2 i {
+            position: relative;
+            font-size: 24px;
+        }
+
+        .Icon2 .badge {
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            background-color: red;
+            color: white;
+            font-size: 12px;
+            padding: 2px 5px;
+            border-radius: 50%;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .banner {
+            display: flex;
+            align-items: center;
+            height: 400px;
+            background-image: url('https://media.istockphoto.com/id/1409728562/vi/anh/n%E1%BB%99i-th%E1%BA%A5t-c%E1%BB%ADa-h%C3%A0ng-qu%E1%BA%A7n-%C3%A1o-sang-tr%E1%BB%8Dng-v%E1%BB%9Bi-qu%E1%BA%A7n-%C3%A1o-gi%C3%A0y-d%C3%A9p-v%C3%A0-ph%E1%BB%A5-ki%E1%BB%87n-c%C3%A1-nh%C3%A2n.jpg?s=2048x2048&w=is&k=20&c=OrnwR0VAgEoUv-MgjSFN8QSNhLgjqnkAUfZxZOIwJ0o=');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+        }
+
+        .banner-sau {
+            position: relative;
+            z-index: 2;
+            margin-left: 20px;
+        }
+
+        .banner-sau .trending {
+            color: #ff647c;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 10px;
+        }
+
+        .banner-sau h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0 0 20px;
+        }
+
+        .banner-sau .price {
+            font-size: 18px;
+            margin: 0 0 20px;
+        }
+
+        .banner-sau .price span {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="Icon1">
+            <div class="Icon1_1">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <h3 style="color: #aaa;">Free Shipping This Week Order Over - $55</h3>
+            <div class="Nuoc">
+                <span>USD $</span>
+                <span>ENGLISH</span>
+            </div>
+        </div>
+        <div class="Main">
+            <div class="Logo">
+                <h1>Anon</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Enter your product name...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="Icon2">
+                <i class="far fa-user"></i>
+                <i class="far fa-heart">
+                    <span class="badge">1</span>
+                </i>
+                <i class="fas fa-shopping-bag">
+                    <span class="badge">1</span>
+                </i>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>CATEGORIES</li>
+                <li>MEN'S</li>
+                <li>WOMEN'S</li>
+                <li>JEWELRY</li>
+                <li>PERFUME</li>
+                <li>BLOG</li>
+                <li>HOT OFFERS</li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="banner">
+            <div class="banner-sau">
+                <p class="trending">Trending Item</p>
+                <h2>WOMEN'S LATEST FASHION SALE</h2>
+                <p class="price">starting at $ <span>20.00</span></p>
+                <button class="Shop-now">SHOP NOW</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
